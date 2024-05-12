@@ -4,6 +4,6 @@ source ~/maceenv/bin/activate
 
 mace_eval_configs \
     --default_dtype="float32" \
-    --configs="THz_orig_test.xyz" \
+    --configs="THz_orig_train_0.9.xyz" \
     --model="MACE_THz_orig_swa.model" \
-    --output="./your_output.xyz" \
+    --output="./your_output_train.xyz" \
