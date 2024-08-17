@@ -9,7 +9,7 @@ import pytorch_lightning as pl
 import os
 import matplotlib.pyplot as plt
 import numpy as np
-
+import os
 import argparse
 ####### Parser arguments
 parser = argparse.ArgumentParser(description='PAiNN for hamiltonian and diabatization')
@@ -47,6 +47,10 @@ torch.set_float32_matmul_precision('high')
 
 seed=1
 seed_everything(seed, workers=True)
+
+# Convert dataset to include distance units
+# os.system('spkconvert --distunit Ang /home/l/liming/painn_active_learning_randomly/THz_orig_plus_filtered_energy.db')
+# os.system('spkconvert --distunit Ang --propunit energy:kcal/mol /home/l/liming/painn_active_learning_randomly/THz_orig_plus_filtered_energy.db')
 
 data =spk.data.AtomsDataModule(
         os.path.join('/home/l/liming/painn_active_learning_randomly/THz_orig_plus_filtered_energy.db'),
