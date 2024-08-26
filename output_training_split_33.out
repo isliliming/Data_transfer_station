@@ -1,0 +1,28 @@
+[rank: 0] Seed set to 1
+Features:  256
+Interactions:  6
+Layers:  2
+Max epochs:  500
+Cutoff:  5.0
+Processing Split  33
+  0%|          | 0/176 [00:00<?, ?it/s]  1%|          | 1/176 [00:01<05:16,  1.81s/it] 20%|█▉        | 35/176 [00:01<00:05, 24.94it/s] 29%|██▉       | 51/176 [00:02<00:03, 37.42it/s] 38%|███▊      | 67/176 [00:02<00:02, 51.12it/s] 47%|████▋     | 83/176 [00:02<00:01, 65.84it/s] 56%|█████▋    | 99/176 [00:02<00:00, 77.02it/s] 64%|██████▍   | 113/176 [00:02<00:00, 88.48it/s] 73%|███████▎  | 129/176 [00:02<00:00, 98.77it/s] 82%|████████▏ | 145/176 [00:02<00:00, 112.08it/s]100%|██████████| 176/176 [00:02<00:00, 62.65it/s] 
+/home/l/liming/PaiNN_env005/lib/python3.11/site-packages/pytorch_lightning/utilities/parsing.py:208: Attribute 'model' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['model'])`.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+Loaded properties:
+ _idx
+ energy
+ _n_atoms
+ _atomic_numbers
+ _positions
+ _cell
+ _pbc
+
+energy:
+ tensor([-0.2507], dtype=torch.float64)
+Shape:
+ torch.Size([1])
+1.1417400151250623 1.3791956250418838
+Mean predicted P:  1.1800875409755647  std:  1.4638436269718111
+MAE test set:  0.4069486768993259
